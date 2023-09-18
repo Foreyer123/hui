@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7614255",
+      "name": "精华",
+      "font_class": "jinghua",
+      "unicode": "e50d",
+      "unicode_decimal": 58637
+    },
+    {
+      "icon_id": "14459190",
+      "name": "global",
+      "font_class": "global",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    }
+  ]
+}
