@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    
+}
+#container {
+    min-height: 100%;
+    display: grid; /* 容器为grid布局 */
+    grid-template-rows: auto 1fr auto; /*行的大小由容器的大小和行中的内容的大小确定*/
+}
+header {
+    padding: 0px;
+    background-color: rgb(55, 60, 65);
+}
+header ul{
+    position: relative;
+    margin: auto;
+    width: 79%;
+    padding: .5rem 1rem;
+    overflow: hidden;
+}
+header li{
+    float: left;
+    padding-left: .5rem;
+    padding-right: .6rem;
+    line-height: 40px;
+}
+header p{
+    font-size: 1.3rem;
+}
+header a{
+    color: aliceblue;
+}
+/* .main{
+    margin: 0 auto;
+    width: 70%;
+    border: 2px dashed red;
+} */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    /* repeat() 函数表示轨道列表的重复片段，允许以更紧凑的形式写入大量显示重复模式的列或行 */
+    /*auto-fill占部分可用空间, minmax自动创建的行高将会是最小 100 像素，最大为 auto */
+    grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+}
+.mainNav{
+    margin: 1em;
+    display: grid;
+    grid-template-rows: max-content 200px 1fr; /*max-content用来表示以网格项的最大的内容来占据网格轨道的关键字*/
+    background-color: rgb(242, 247, 247);
+    border: 1px solid #d6c7c7;
+}
+.mainNav img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;/*适应到其使用高度和宽度确定的框,内容在保持其宽高比的同时填充元素的整个内容框*/
+}
+.text{
+    padding: 0 10px;
+}
+.text p {
+    font-size: 1.5rem;
+    padding: 8% 0 5% 0;
+    cursor: pointer;
+}
+.text span{
+    line-height: 25px;
+    display: -webkit-box; /* 使用safari（-webkit)浏览器的私有属性定义 */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 显示三行，后面省略 */
+    overflow: hidden;
+}
+.button{
+    width: 40%;
+    height: 16%;
+    float: right;
+    margin-top: 25px;
+    background-color: rgb(0, 113, 252);
+    color: #fff;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(0, 76, 252);
+}
+.text ul{
+    margin-top: 30px;
+    cursor: pointer;
+}
+.text ul li{
+    float: left;
+    padding-right: 3%;
+}
+.text ul h4{
+    color: #3b71bc;
+}
+
+footer{
+    background-color: #6c757d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    margin-bottom: 10px;
+}
+
